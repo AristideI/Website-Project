@@ -8,7 +8,6 @@ module.exports = {
         "main-blue": "#0D2E4A",
         "gr-blue": "#001240",
         "gr-green": "#8acc50a8",
-        main
       },
       spacing: {
         padd: '7%',
