@@ -10,6 +10,9 @@ module.exports = {
         "gr-green": "#8acc50a8",
         main
       },
+      spacing: {
+        padd: '7%',
+       }
     },
   },
   plugins: [],
