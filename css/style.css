@@ -547,6 +547,10 @@ video {
   display: none;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -563,6 +567,12 @@ video {
   height: 70%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 .h-32 {
   height: 8rem;
 }
@@ -583,10 +593,16 @@ video {
   width: 2rem;
 }
 
+.w-\[35\%\] {
+  width: 35%;
+}
+
 .w-\[43rem\] {
   width: 43rem;
 }
 
+.w-full {
+  width: 100%;
 .w-1\/2 {
   width: 50%;
 }
@@ -613,18 +629,23 @@ video {
 
 .justify-center {
   justify-content: center;
+
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-4 {
@@ -635,6 +656,9 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+=======
 .gap-12 {
   gap: 3rem;
 }
@@ -657,10 +681,24 @@ video {
   border-bottom-width: 2px;
 }
 
+.bg-gr-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 18 64 / var(--tw-bg-opacity));
+=======
+
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
 }
 
+.from-\[\#8acc50a8\] {
+  --tw-gradient-from: #8acc50a8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(138 204 80 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+=======
 .border-\[\#116355\] {
   --tw-border-opacity: 1;
   border-color: rgb(17 99 85 / var(--tw-border-opacity));
@@ -695,11 +733,6 @@ video {
      object-fit: contain;
 }
 
-.px-52 {
-  padding-left: 13rem;
-  padding-right: 13rem;
-}
-
 .px-\[7\%\] {
   padding-left: 7%;
   padding-right: 7%;
@@ -715,6 +748,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+=======
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -724,6 +760,10 @@ video {
   padding-left: 7%;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+=======
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -789,6 +829,10 @@ video {
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-col {
