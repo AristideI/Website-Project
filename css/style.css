@@ -647,6 +647,16 @@ video {
   align-self: flex-end;
 }
 
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.from-\[\#8acc50a8\] {
+  --tw-gradient-from: #8acc50a8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(138 204 80 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -743,6 +753,7 @@ video {
 .font-medium {
   font-weight: 500;
 }
+
 
 .font-light {
   font-weight: 300;
