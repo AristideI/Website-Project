@@ -6,3 +6,23 @@
 .diagonal-pro{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
+
+.diagonal-pri {
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%);
+}
+
+.diagonal-sec {
+    clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 7%, 14% 3%);
+}
+
+@media (max-width: 800px) {
+    .diagonal-pro{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+    }
+    .diagonal-pri {
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    }
+    .diagonal-sec {
+        clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 0, 12% 0);
+    }
+}
