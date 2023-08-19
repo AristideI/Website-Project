@@ -4,7 +4,7 @@ Welcome to the repository of the Ojemba BG website. This project is developed us
 
 ## Team Members
 
-- **Yve**
+- **Yves**
 - **Aristide**
 - **Jeann**
 
