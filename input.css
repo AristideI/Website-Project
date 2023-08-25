@@ -15,6 +15,12 @@
     clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 7%, 14% 3%);
 }
 
+
+.diagonal-thir {
+    clip-path: polygon(50% 36%, 70% 58%, 100% 60%, 100% 99%, 0 86%, 0% 60%, 28% 55%)
+}
+
+
 @media (max-width: 800px) {
     .diagonal-pro{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
@@ -24,5 +30,9 @@
     }
     .diagonal-sec {
         clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 0, 12% 0);
+    }
+
+    .diagonal-thir {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }

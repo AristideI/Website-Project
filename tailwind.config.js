@@ -18,7 +18,7 @@ module.exports = {
         "primary-green": "#8acc50",
         "main-blue": "#0D2E4A",
         "gr-blue": "#001240",
-        "gr-green": "#8acc50a8",
+        "gr-green": "#456f49",
       },
       spacing: {
         padd: '7%',
