@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Ojemba Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
     const loadComponents = (id, url) => {
-        fetch(url)
-            .then((response) => response.text())
-            .then((html) => {
-                document.getElementById(id).innerHTML = html;
-            });
-    }
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById(id).innerHTML = html;
+        });
+    };
 
     window.onload = () => {
-        loadComponents('header', 'sections/header.html');
-        loadComponents('hero', 'sections/hero.html');
-        loadComponents('team', 'sections/team.html');
-        loadComponents('skills', 'sections/skills.html');
-        loadComponents('qualitat', 'sections/qualitat.html');
-        loadComponents('partners', 'sections/partners.html');
-        loadComponents('founder', 'sections/founder.html');
-        loadComponents('rwanda', 'sections/rwanda.html');
-        loadComponents('questions', 'sections/questions.html');
-        loadComponents('footer', 'sections/footer.html');
-    }
-</script>
+      loadComponents("header", "sections/header.html");
+      loadComponents("hero", "sections/hero.html");
+      loadComponents("team", "sections/team.html");
+      loadComponents("skills", "sections/skills.html");
+      loadComponents("qualitat", "sections/qualitat.html");
+      loadComponents("partners", "sections/partners.html");
+      loadComponents("founder", "sections/founder.html");
+      loadComponents("rwanda", "sections/rwanda.html");
+      loadComponents("questions", "sections/questions.html");
+      loadComponents("footer", "sections/footer.html");
+    };
+  </script>
 
-<body>
-    <div id="header"></div>
-    <div id="hero"></div>
-    <div id="team"></div>
-    <div id="skills"></div>
-    <div id="qualitat"></div>
-    <div id="partners"></div>
-    <div id="founder"></div>
-    <div id="rwanda"></div>
-    <div id="questions"></div>
-    <div id="footer"></div>
-</body>
-
+  <body class="flex flex-col items-center">
+    <div class="max-w-[1400px]">
+      <div id="header"></div>
+      <div id="hero"></div>
+      <div id="team"></div>
+      <div id="skills"></div>
+      <div id="qualitat"></div>
+      <div id="partners"></div>
+      <div id="founder"></div>
+      <div id="rwanda"></div>
+      <div id="questions"></div>
+      <div id="footer"></div>
+    </div>
+  </body>
 </html>
