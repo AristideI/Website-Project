@@ -80,3 +80,16 @@
 .spi-dur {
   transition: all 3s;
 }
+
+.skel {
+  animation: ske-move 1s infinite linear alternate;
+}
+
+@keyframes ske-move {
+  0% {
+    background-color: #6e6e6e;
+  }
+  100% {
+    background-color: #d8d8d8;
+  }
+}
