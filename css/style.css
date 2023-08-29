@@ -570,6 +570,10 @@ video {
   bottom: 0.5rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-10 {
   left: 2.5rem;
 }
@@ -594,8 +598,16 @@ video {
   left: 2.25rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-\[10\%\] {
   right: 10%;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .-z-40 {
@@ -722,6 +734,10 @@ video {
 
 .h-\[2px\] {
   height: 2px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -1066,6 +1082,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
 .from-\[\#8acc504f\] {
   --tw-gradient-from: #8acc504f var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(138 204 80 / 0) var(--tw-gradient-to-position);
@@ -1342,7 +1362,7 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.diagonal-pro{
+.diagonal-pro {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
@@ -1353,17 +1373,55 @@ video {
 }
 
 .diagonal-sec {
-  -webkit-clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 7%, 14% 3%);
-          clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 7%, 14% 3%);
+  -webkit-clip-path: polygon(
+    27% 0,
+    62% 0,
+    100% 0,
+    100% 65%,
+    100% 100%,
+    50% 100%,
+    25% 100%,
+    0 100%,
+    0 7%,
+    14% 3%
+  );
+          clip-path: polygon(
+    27% 0,
+    62% 0,
+    100% 0,
+    100% 65%,
+    100% 100%,
+    50% 100%,
+    25% 100%,
+    0 100%,
+    0 7%,
+    14% 3%
+  );
 }
 
 .diagonal-thir {
-  -webkit-clip-path: polygon(50% 36%, 70% 58%, 100% 60%, 100% 99%, 0 86%, 0% 60%, 28% 55%);
-          clip-path: polygon(50% 36%, 70% 58%, 100% 60%, 100% 99%, 0 86%, 0% 60%, 28% 55%)
+  -webkit-clip-path: polygon(
+    50% 36%,
+    70% 58%,
+    100% 60%,
+    100% 99%,
+    0 86%,
+    0% 60%,
+    28% 55%
+  );
+          clip-path: polygon(
+    50% 36%,
+    70% 58%,
+    100% 60%,
+    100% 99%,
+    0 86%,
+    0% 60%,
+    28% 55%
+  );
 }
 
 @media (max-width: 800px) {
-  .diagonal-pro{
+  .diagonal-pro {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   }
@@ -1374,14 +1432,54 @@ video {
   }
 
   .diagonal-sec {
-    -webkit-clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 0, 12% 0);
-            clip-path: polygon(27% 0, 62% 0, 100% 0, 100% 65%, 100% 100%, 50% 100%, 25% 100%, 0 100%, 0 0, 12% 0);
+    -webkit-clip-path: polygon(
+      27% 0,
+      62% 0,
+      100% 0,
+      100% 65%,
+      100% 100%,
+      50% 100%,
+      25% 100%,
+      0 100%,
+      0 0,
+      12% 0
+    );
+            clip-path: polygon(
+      27% 0,
+      62% 0,
+      100% 0,
+      100% 65%,
+      100% 100%,
+      50% 100%,
+      25% 100%,
+      0 100%,
+      0 0,
+      12% 0
+    );
   }
 
   .diagonal-thir {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
+}
+
+.loader {
+  animation: spining 2s infinite linear;
+}
+
+@keyframes spining {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spi-dur {
+  transition: all 3s;
 }
 
 .hover\:underline:hover {
@@ -1556,8 +1654,8 @@ video {
     padding-left: 1rem;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:pt-1 {
+    padding-top: 0.25rem;
   }
 
   .md\:pt-20 {
@@ -1566,10 +1664,6 @@ video {
 
   .md\:pt-28 {
     padding-top: 7rem;
-  }
-
-  .md\:pt-1 {
-    padding-top: 0.25rem;
   }
 
   .md\:text-3xl {
