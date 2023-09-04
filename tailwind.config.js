@@ -1,30 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html", "./sections/*.html"],
   theme: {
     screens: {
-      '2xl': {'max': '1535px'},
+      "2xl": { max: "1535px" },
 
-      'xl': {'max': '1279px'},
+      xl: { max: "1279px" },
 
-      'lg': {'max': '1023px'},
+      lg: { max: "1023px" },
 
-      'md': {'max': '767px'},
+      md: { max: "800px" },
 
-      'sm': {'max': '639px'},
+      sm: { max: "639px" },
     },
     extend: {
-      colors :{
+      colors: {
         "primary-green": "#8acc50",
         "main-blue": "#0D2E4A",
         "gr-blue": "#001240",
-        "gr-green": "#8acc50a8",
+        "gr-green": "#456f49",
       },
       spacing: {
-        padd: '7%',
-       }
+        padd: "7%",
+      },
+      fontSize: {
+        "40x": "40px",
+      },
     },
   },
   plugins: [],
-}
-
+};

@@ -1,41 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Ojemba Project</title>
-    </head>
-    <script>
-        const loadComponents = (id, url) =>  {
-            fetch(url)
-            .then((response) => response.text())
-            .then((html) => {
-                document.getElementById(id).innerHTML = html;
-            });
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ojemba Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById(id).innerHTML = html;
+        });
+    };
 
-        window.onload = () => {
-            loadComponents('header', 'sections/header.html');
-            loadComponents('hero', 'sections/hero.html');
-            loadComponents('team', 'sections/team.html');
-            loadComponents('skills', 'sections/skills.html');
-            loadComponents('qualitat', 'sections/qualitat.html');
-            loadComponents('partners', 'sections/partners.html');
-            loadComponents('founder', 'sections/founder.html');
-            loadComponents('rwanda', 'sections/rwanda.html');
-            loadComponents('footer', 'sections/footer.html');
-        }
-    </script>
-    <body>
-        <div id="header"></div>
-        <div id="hero"></div>
-        <div id="team"></div>
-        <div id="skills"></div>
-        <div id="qualitat"></div>
-        <div id="partners"></div>
-        <div id="founder"></div>
-        <div id="rwanda"></div>
-        <div id="footer"></div>
-    </body>
+    window.onload = () => {
+      loadComponents("header", "sections/header.html");
+      loadComponents("hero", "sections/hero.html");
+      loadComponents("team", "sections/team.html");
+      loadComponents("skills", "sections/skills.html");
+      loadComponents("qualitat", "sections/qualitat.html");
+      loadComponents("partners", "sections/partners.html");
+      loadComponents("founder", "sections/founder.html");
+      loadComponents("rwanda", "sections/rwanda.html");
+      loadComponents("questions", "sections/questions.html");
+      loadComponents("footer", "sections/footer.html");
+    };
+  </script>
+
+  <body class="flex flex-col items-center bg-gr-blue">
+    <div id="header"></div>
+    <div id="hero"></div>
+    <div id="team"></div>
+    <div id="skills"></div>
+    <div id="qualitat"></div>
+    <div id="partners"></div>
+    <div id="founder"></div>
+    <div id="rwanda"></div>
+    <div id="questions"></div>
+    <div id="footer"></div>
+
+    <section
+      class="spiner z-50 bg-gradient-to-tr from-gr-blue to-gr-green text-white w-full h-screen flex flex-col items-center justify-center gap-12 fixed top-0 left-0 right-0"
+    >
+      <img class="" src="Img/Ojemba green.png" alt="ojemba logo" />
+      <p>
+        Our lives improve only when we take chances - and the first and most
+        difficult risk we can take is to be honest with ourselves.
+      </p>
+
+      <img class="loader w-16" src="Img/loading.png" alt="loading icon" />
+    </section>
+
+    <article
+      class="skeleton z-40 text-white w-screen mx-auto bg-gradient-to-l from-gr-green to-gr-blue md:h-fit fixed top-0 left-0 right-0 h-screen"
+    >
+      <nav
+        class="flex justify-between py-6 items-center px-[7%] md:px-[4%] h-[12%] raleway font-700"
+      >
+        <div class="w-36 bg-gray-300 h-8 rounded-lg skel"></div>
+
+        <section class="flex gap-8 items-center md:hidden">
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <div class="w-16 h-6 skel bg-gray-300 rounded-lg"></div>
+          <button class="flex flex-col items-center gap-0 font-bold">
+            <div class="w-6 h-6 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-6 h-6 skel bg-gray-300 rounded-lg"></div>
+          </button>
+        </section>
+        <img class="w-8 hidden md:block" src="../Img/menu (4).png" alt="menu" />
+      </nav>
+
+      <section
+        class="flex pt-28 justify-between items-center px-[7%] md:pl-4% md:px-[4%] md:flex-col md:gap-4"
+      >
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-6 raleway font-700">
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+          </div>
+          <div class="w-80 h-6 skel bg-gray-300 rounded-lg"></div>
+        </div>
+        <div class="w-[43rem] h-72 skel bg-gray-300"></div>
+      </section>
+
+      <section
+        class="h-[18%] py-6 bg-gradient-to-l from-[#8acc504f] to-gr-blue px-[7%] md:px-[4%] flex justify-between md:flex-col md:gap-6 md:py-6"
+      >
+        <div class="flex items-center gap-4 md:justify-center md:gap-12">
+          <div class="w-20 h-20 bg-gray-300 skel rounded-full"></div>
+          <div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg mt-4"></div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 md:hidden">
+          <div class="w-20 h-20 bg-gray-300 skel rounded-full"></div>
+          <div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg mt-4"></div>
+          </div>
+        </div>
+        <div
+          class="md:flex items-center gap-4 md:justify-center md:gap-12 hidden"
+        >
+          <div>
+            <p class="text-lg text-primary-green font-semibold">
+              Talent & Quality
+            </p>
+            <p>Viele junge, gut ausgebildete und motivierte menschen</p>
+          </div>
+          <img class="w-20" src="../Img/handshake.png" alt="icon" />
+        </div>
+        <div class="flex items-center gap-4 md:justify-center md:gap-12">
+          <div class="w-20 h-20 bg-gray-300 skel rounded-full"></div>
+          <div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg"></div>
+            <div class="w-72 h-12 skel bg-gray-300 rounded-lg mt-4"></div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
